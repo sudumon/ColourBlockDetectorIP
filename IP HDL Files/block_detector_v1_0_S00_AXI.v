@@ -265,11 +265,11 @@
 	      slv_reg14 <= 0;
 	      slv_reg15 <= 0;
 	      slv_reg16 <= 0;
-	      slv_reg17 <= 100;
-	      slv_reg18 <= 100;
-	      slv_reg19 <= 255;
+	      slv_reg17 <= 0;
+	      slv_reg18 <= 0;
+	      slv_reg19 <= 0;
 	      slv_reg20 <= 0;
-	      slv_reg21 <= 100;
+	      slv_reg21 <= 0;
 	      slv_reg22 <= 0;
 	      slv_reg23 <= 0;
 	      slv_reg24 <= 0;
