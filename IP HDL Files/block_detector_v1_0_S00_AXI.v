@@ -651,20 +651,21 @@
 	      // Address decoding for reading registers
 	      case ( axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
 	        5'h00   : reg_data_out <= slv_reg0;
-	        5'h01   : reg_data_out <= x_min;
-	        5'h02   : reg_data_out <= x_max;
-	        5'h03   : reg_data_out <= y_min;
-	        5'h04   : reg_data_out <= y_max;
-	        5'h05   : reg_data_out <= x_min_f;
-	        5'h06   : reg_data_out <= x_max_f;
-	        5'h07   : reg_data_out <= y_min_f;
-	        5'h08   : reg_data_out <= y_max_f;
-	        5'h09   : reg_data_out <= pixel_in;
-	        5'h0A   : reg_data_out <= s;
-	        5'h0B   : reg_data_out <= ns;
-	        5'h0C   : reg_data_out <= r;
-	        5'h0D   : reg_data_out <= g;
-	        5'h0E   : reg_data_out <= b;
+	        5'h01   : reg_data_out <= slv_reg1;
+	        5'h02   : reg_data_out <= slv_reg2;
+	        5'h03   : reg_data_out <= slv_reg3;
+	        5'h04   : reg_data_out <= slv_reg4;
+	        5'h05   : reg_data_out <= slv_reg5;
+	        5'h06   : reg_data_out <= slv_reg6;
+	        5'h07   : reg_data_out <= slv_reg7;
+	        5'h08   : reg_data_out <= slv_reg8;
+	        5'h09   : reg_data_out <= slv_reg9;
+	        5'h0A   : reg_data_out <= slv_reg10;
+	        5'h0B   : reg_data_out <= slv_reg11;
+	        5'h0C   : reg_data_out <= slv_reg12;
+	        5'h0D   : reg_data_out <= slv_reg13;
+	        5'h0E   : reg_data_out <= slv_reg14;
+	        5'h0F   : reg_data_out <= slv_reg15;		      
 	        5'h10   : reg_data_out <= slv_reg16;
 	        5'h11   : reg_data_out <= slv_reg17;
 	        5'h12   : reg_data_out <= slv_reg18;
@@ -730,12 +731,12 @@
     wire [7:0] b;
     wire p_clk;
     
-    assign r_min = slv_reg16;
-    assign r_max = slv_reg17;
-    assign g_min = slv_reg18;
-    assign g_max = slv_reg19;
-    assign b_min = slv_reg20;
-    assign b_max = slv_reg21;
+    assign r_min = slv_reg0;
+    assign r_max = slv_reg1;
+    assign g_min = slv_reg2;
+    assign g_max = slv_reg3;
+    assign b_min = slv_reg4;
+    assign b_max = slv_reg5;
     
     assign p_clk = pixel_clk;
     assign pixel = pixel_in;
