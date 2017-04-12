@@ -4,6 +4,10 @@ Authors: Kazi Sudipto Arif and Shariq Khalil Ahmed
 It has been designed for integration into a project for video streaming purposes.
 The HDL files are provided instead of an IP repo and if anyone wants to use it
 they simply have to import the HDL files while creating a brand new IP to wrap around this one.
+Easiest way to do this is create a new 6 register AXI slave with a master AXIS and slave AXIS interface
+and copy and paste the HDL files into that IP.
+
 Vivado has lots of cache files for IPs so it makes more sense to just have the HDL files which
 anyone can import without Vivado fussing over them.
-A testbench is provided to verify x-y tracking works for this IP.
+
+A simple testbench is provided to verify x-y tracking works for this IP.
