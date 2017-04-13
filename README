@@ -11,3 +11,6 @@ Vivado has lots of cache files for IPs so it makes more sense to just have the H
 anyone can import without Vivado fussing over them.
 
 A simple testbench is provided to verify x-y tracking works for this IP.
+
+This repo also comes with documentation explaining Xilinx's AXI Streaming interface and how to design
+custom IPs for it.
